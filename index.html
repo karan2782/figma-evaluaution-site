@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=ZCOOL+KuaiLe&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shojumaru&family=ZCOOL+KuaiLe&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma | Site</title>
+
+    <style>
+        .logo-image>img {
+            width: 100%;
+            height: 100%;
+            margin-top: 14px;
+        }
+
+        .logo {
+
+            display: flex;
+            align-items: center;
+            font-family: "ZCOOL KuaiLe";
+            /* border: 1px solid black; */
+            /* column-gap: 20px; */
+            justify-content: center;
+
+
+        }
+
+        .logo-image {
+            width: 116px;
+            height: 117px;
+        }
+
+        .logo>div:nth-child(2) {
+
+            font-size: 32px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            /* border: 1px solid yellow; */
+            width: 122px;
+            height: 32px;
+            /* margin-left: 10px; */
+            color: #FFFFFF;
+
+
+        }
+
+        .container {
+            border: 2px solid black;
+            width: 1512px;
+            margin: auto;
+            height: 588px;
+            background-image: url('https://s3-alpha-sig.figma.com/img/894b/df6e/56b90bbef82ad188765f40d12a46caef?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=U0pPaOMWXR-t72pP3ftgjHJXWtponYsJrenQMv37s4za-g12WmsVx462srUk-VxD8hYPdllQsMQNwL-5l8gdFfYKkIJN8BXmdRgw8sC~WGGVDhLa-lNqS8gu5wSL9JuBwqlowKRSop5T2-52ouVY7JKQwn60O4ep5ui~Iwzp9oJ9RqAzvCuuSuyaB9WnIVauKab6Wn6She-aR7YM2yGgsdsxI8ew~dKEJTQOlfr1fXJkbEoxsk7F9CTgzobgvxEoOSL-yNdvL7Z8p83kFFDPgMbY4MeP7q6Sq4jetVcjVMyYai6AARWuygeEWX~wAc5j5S9NKUYyLcR1Jlf0Mw4t5w__');
+        }
+
+        .navbar {
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navbar>ul {
+            display: flex;
+            list-style: none;
+            width: 583px;
+            border-radius: 20px;
+            align-items: center;
+
+            padding: 16px;
+            border: 2px solid black;
+            background-color: #191818;
+            color: #FFFFFF;
+
+            font-family: "ZCOOL KuaiLe";
+
+        }
+
+        .navbar>ul>li {
+            padding: 0 16px;
+            font-family: ZCOOL KuaiLe;
+            font-size: 20px;
+            font-weight: 400;
+
+
+        }
+
+        .wallet {
+            padding: 10px 16px;
+            border-radius: 16px;
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 600;
+            background-color: #EF0236;
+            color: #FFFFFF;
+            border: none;
+
+
+        }
+
+        .container>p {
+            font-family: Shojumaru;
+            font-size: 45px;
+            font-weight: 400;
+            line-height: 53.55px;
+            text-align: center;
+            width: 1262px;
+            margin: auto;
+            margin-top: 132px;
+            color: #FFFFFF;
+
+        }
+
+        .content-text>h2 {
+            font-family: Shojumaru;
+            font-size: 44px;
+            font-weight: 400;
+            line-height: 52.36px;
+            text-align: left;
+            color: #ED0137;
+
+
+        }
+
+        .content-text>p {
+            font-family: ZCOOL KuaiLe;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 28.56px;
+            text-align: left;
+            width: 587px;
+            color: #FFFCFD;
+
+
+
+        }
+
+        .container-two {
+            /* border: 1px solid red; */
+            width: 1512px;
+            margin: auto;
+            background: #191818;
+
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .content-text>button {
+            padding: 16px 20px;
+            font-family: ZCOOL KuaiLe;
+            font-size: 20.03px;
+            font-weight: 400;
+            line-height: 20.03px;
+            text-align: left;
+            background: linear-gradient(93.73deg, #D51B46 10.19%, #EE6910 98.19%);
+            border-radius: 21px;
+            color: #FFFFFF;
+            border: none;
+
+
+
+        }
+
+        .content-image {
+            width: 700px;
+            height: 700px;
+        }
+
+        .content-image>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container-three {
+            padding: 64px 0 100px 0;
+            /* border: 1px solid yellow; */
+            width: 1512px;
+            margin: auto;
+            background-image: url("https://s3-alpha-sig.figma.com/img/7fb8/c9c7/2e63edc105c3925cfa651946f437c2fd?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pAGxyyrb1oJ0D8VmYEwIuaaJ7VDqdALNGT4PGHE0nVODxcf57LqgD-n5qAfVJ2OuyUQDu7NZyXXx-0Q5Z0cra055u1FKDKhM3p72i9D2pw3~jEGZX31MPbmdipH~YJC5gIHmswbiLpkV2sgldRN4E7sgdK5kACSJBTzjfOVMzCJINoKFeA1~YBbrJJlAa3aVPi1NxjU1JfdvF1jON1RaCM4A-0wCOXBnOuj75vIwp9BsN6GINmM4on0C2aKUJ1R60BOd7hasaciyTeW0HLP5pYkWZ6c1n2Aaej4oPaeNBbsW6SC5Rhps1huvml3FD3PRYTDw1rnSNdBwpyWSyzu79Q__");
+            background-position: center;
+            width: 1512px;
+            background-size: cover;
+
+
+        }
+
+
+
+
+
+
+        .container-three>h2 {
+            font-family: Shojumaru;
+            font-size: 44px;
+            font-weight: 400;
+            line-height: 52.36px;
+            color: #ED0137;
+            text-align: center;
+            margin-bottom: 112px;
+
+
+
+        }
+
+        .box {
+            display: flex;
+            column-gap: 70px;
+            /* border: 1px solid red; */
+            width: 1159px;
+            margin: auto;
+        }
+
+        .box>div {
+            width: 237.06px;
+            height: 349px;
+
+            border-radius: 13.17px;
+            /* border: 1px solid black; */
+
+
+
+        }
+
+        .box div img {
+            width: 100%;
+            height: 100%;
+
+            opacity: 0px;
+            border-radius: 13.17px;
+
+
+        }
+
+        .shield-image {
+            height: 503px;
+            width: 503px;
+        }
+
+        .shield-image>img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .text-four>div {
+            width: 640px;
+            /* height: 77px; */
+            border-radius: 20px;
+            border: 1px solid black;
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            padding: 24px 0;
+            margin-bottom: 15px;
+        }
+
+        .nums {
+            margin-top: 15px;
+
+        }
+
+        .text-four>div {
+            font-family: Shojumaru;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26.48px;
+
+
+        }
+
+        .forth-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .horizon {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .vertical {
+            width: 568px;
+            border: 1px solid black;
+            height: 83px;
+            border-radius: 20px;
+            text-align: center;
+            margin-left: 30px;
+        }
+
+        .vertical>p {
+            font-family: ZCOOL KuaiLe;
+            font-size: 15px;
+            font-weight: 400;
+
+
+        }
+
+        .container-four {
+            display: flex;
+            width: 1512px;
+            margin: auto;
+            column-gap: 90px;
+            padding-top: 64px;
+            align-items: center;
+            background: #191818;
+
+        }
+
+        .text-four>h2 {
+            text-align: center;
+            font-family: Shojumaru;
+            font-size: 44px;
+            font-weight: 400;
+            color: #ED0137;
+
+
+        }
+
+        .text-four {
+            color: #FFFFFF;
+        }
+
+        .image-five {
+            height: 250px;
+            width: 250px;
+
+        }
+
+        .image-five>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container-five {
+            width: 1512px;
+            text-align: center;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+            padding: 64px 0;
+            background: #191818;
+
+        }
+
+        .container-five>ul {
+            display: flex;
+            column-gap: 10px;
+            list-style-type: none;
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 25.64px;
+            letter-spacing: 1.7090909481048584px;
+            color: white;
+
+
+        }
+
+        .container-five>h2 {
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 25.64px;
+            letter-spacing: 1.7090909481048584px;
+            color:#720005;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-image">
+                        <img src="https://s3-alpha-sig.figma.com/img/79e0/db14/6de61e6b7e512045a7cc5fab1681c6dc?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cpsJ9ujNNmUxLskfs8GDymYzW08fZbPn4MpECcoiM7MzoPM1sX74jPoZaz0Jc-x9e6trrl4SgYckZ8ASbS2GryqzTstLgcQdiGR~PjwNjuvwhdkf1qVyFTNoFbXVm6Mu7wOBW5iv~Xiq8~GcRx9Ut-2CHs7s5uqZGup5LqYvrSuYoC-dBSLEZNedJqqi1WZmRvQRNLYtvWQarHdnpazCqwDwGP0yiDR7M7ipkW6u-xlY5KqsI7~JRcvHfmtYbpCycCn2Gji2z8Q57R0VB68DJ14KqqRb8w0NTd0VUW4ZHgS78IoTJ2tPCGtNbuGQejRjJqxBYaA1zSIJLoMwsljoKQ__"
+                            alt="">
+
+                    </div>
+                    <div>
+                        <p>Saviour</p>
+                    </div>
+                </div>
+
+                <ul>
+                    <li>Home</li>
+                    <li>IDO</li>
+                    <li>Takenomics</li>
+                    <li>Roadmap
+                    </li>
+                    <li>Coming Soon</li>
+                </ul>
+
+                <button class="wallet">
+                    Connect Wallet
+                </button>
+            </nav>
+
+            <p>Where Blockchain Heroes Thrive, Rescuing Dreams, Elevating Fortunes.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-two">
+            <div class="content">
+                <div class="content-text">
+                    <h2>INTRODUCTION</h2>
+                    <p>We've all been in the mud once, and now we've decided to fight it out. Pay tribute to those
+                        pioneers of WEB3 and the warriors who dedicated their love to the blockchain. Save the lucky
+                        ones alive, join us to save the future! Our mission is to empower everyone to share wealth and
+                        succeed. read more...</p>
+                    <button class="btn-doc">Documents &#9660;</button>
+                </div>
+                <div class="content-image"><img
+                        src="https://s3-alpha-sig.figma.com/img/72d9/2d64/713f95c34c945a62844515044f63fcd4?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dy6gWAVwYliawleJchb7RBisKJjz-~g1x5ZQXX494TEl0ccOk3KSgnf9hGEvLfSHX4~EyQKPn07jB0Lp-YEh3qBdOXQsUfDP3HM3a~HAbVQ7GDjb4LbxygWHDfTIn9lScZyrBIcv6yphV9PpqLwM9HEBtPpI9dFLdlDU~5T2ImvCU~OI4Nh7vI6fgslwJlLTpjkmoF2zU3VFP-XeHNlbuwQmpDZI8lgIwzEc~dB9EaxEKRv~MBy1aS3XstcjmWS~IfrZvVH1J7rMTEkcNxwmR77fE-XcKgQAxFThgPLipp8bDZwQDMteW90zDSbP6ne9TxCo15dv6oUZFEiNlSPDLA__"
+                        alt=""></div>
+            </div>
+        </div>
+
+        <div class="container-three">
+            <h2>ROAD MAP</h2>
+            <div class="box">
+                <div> <img
+                        src="https://s3-alpha-sig.figma.com/img/4b01/5d0d/f2954eaf00df1cee6eb3039a08679aa7?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JHvMMdL0Ow9Jc0Krr3OnLhZhv-RLd8gqlQnw7n19J4kKJz2W6UvSRvX~FrIUKz7tIKEM75xJi5mbgPwFv~6Zxw3pGiX1o6yn2cXoduZiC1YU3FhJQlrFfR2hIl65FH5MLVya4OYhKAuEDomExgmY3fsdxn7gKkHE0unECBXZkxrw9klDFioQ9hg30MlHuPqSh7~PFmf~MwNR8HN9XHi2QYRoruab-QWVMpUppFeqIfunqnsrx2OFXyJ0Txrdf6FXBUyIKOZYHG20ZhVqAbW77~0QryhHTYycC6Eu7p9C0hKZCb-36c2LRqEXiR-juaaPvVw0eWoguBnthDjN-NIWYA__"
+                        alt=""></div>
+                <div> <img
+                        src="https://s3-alpha-sig.figma.com/img/aa29/8bb9/151666f4ac7fae86b6b63f7e97472d61?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZgePVMhSJ4MQH1dh5BI68y82azR5VDL15KAqIi-1alB5roTpIvEh0WyPQgHKlHBmq38Zq714lwYsy66lC3ciP9DlZIJjcwhz7SQrnOhjSDqfw2zu5xja1AWKgAOQdmBPjw~Az9geChW7x8H6p4hcbUEujwDy~HsbwUV3UPv6LPfIcsTmb7apzejYfEEdXhwG7Dd9jRlrzNOB6EI0zfkxDJD9MfYf5RzNeO1eBbQzG406ot-dXqUYRwCaQbTbpqtS9aB~5Dk-ntCaREdwj3nKHKrAipK13EpCrBhBG3Y3pjFZuzbXGZGP~cF3FQ64AWA2sQUImdaiutLDmo2sxIEz4A__"
+                        alt=""></div>
+
+                <div> <img
+                        src="https://s3-alpha-sig.figma.com/img/4b01/5d0d/f2954eaf00df1cee6eb3039a08679aa7?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JHvMMdL0Ow9Jc0Krr3OnLhZhv-RLd8gqlQnw7n19J4kKJz2W6UvSRvX~FrIUKz7tIKEM75xJi5mbgPwFv~6Zxw3pGiX1o6yn2cXoduZiC1YU3FhJQlrFfR2hIl65FH5MLVya4OYhKAuEDomExgmY3fsdxn7gKkHE0unECBXZkxrw9klDFioQ9hg30MlHuPqSh7~PFmf~MwNR8HN9XHi2QYRoruab-QWVMpUppFeqIfunqnsrx2OFXyJ0Txrdf6FXBUyIKOZYHG20ZhVqAbW77~0QryhHTYycC6Eu7p9C0hKZCb-36c2LRqEXiR-juaaPvVw0eWoguBnthDjN-NIWYA__"
+                        alt=""></div>
+                <div> <img
+                        src="https://s3-alpha-sig.figma.com/img/e792/f455/d02fe23b0b95b2461d5ab0db33cfb4b7?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DHWw0J7V1eJo8TJOH6s6BKg2BvVD4t6TPsu9VNymX2ircKl2uLC~QRQNIWnv7iuKwrQ31~GmZ7auJ~qfqwdEznp2K7TkAYGGPFTT1pmL6bkbxXymN9gD88bjEZm81oJy0kSzqq8asGdAXguHCeRNMafacAqfOHIIytITXz8SRLo1C~WtCibYe6GbQWVSRYdeSZEMlZQdBqqD8uYZBu86wQ3TZ5xRG5lO8LiDLrnJvfPHwZ8ZUaReSngzcNCX2MqP7VJ2xRpq0exDOTYEyk9dn1tb0N-99br79vb27UvrRT0cg4YPYo3k8W7frmtFL0wNZeYKGlR~FIKI92bnpL7jdQ__"
+                        alt=""></div>
+            </div>
+
+
+        </div>
+        </div>
+
+        <div class="container-four">
+            <div class="shield-image">
+                <img src="https://s3-alpha-sig.figma.com/img/7624/956b/bb5893d955ab92e34ab86102a42d6d23?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HgV7vT5TT5nd2W8dk5fNRnM3OPBgds9BiAc7m-NIVeGxFgTTtA7WWQ5ZMckoDDCDhGteotOk-OWZwcLCIDFzVheYJmOyp5~51Fcw3UAQ4z3-xxLScEb9~Q30wiPNmNC8YFHzUXIhB4fbkO9HYJT5GOHc4xfYuks9r2oacXg0wp8EP2G5I0DGGmaQGFpOUFOFgIm1~2meb966vEb5iil6nsV6DPofAYjwd~BZfxT0Keo4vF81Awkae4rqMbR94Zf0zOMFHTC-Pwau3dMlcHGrhKQ98mUljm6YoDx0uQ6zBOcjiu3F94tQom97V8YmNSh3oB3OBwg8TAiBbjFFNNMMdg__"
+                    alt="">
+            </div>
+
+            <div class="text-four">
+                <h2>FAQ</h2>
+                <div>
+                    <div class="nums">1</div>
+                    <p>Why choose "Savior"?</p>
+                    <div>&#9660;</div>
+                </div>
+                <div>
+                    <div class="nums">2</div>
+                    <p>Why is the IDO duration so long?</p> <span>&#9660;</span>
+                </div>
+                <div>
+                    <div class="nums">3</div>
+                    <p>When will trading go live?</p> <span>&#9660;</span>
+                </div>
+                <div class="forth-div">
+                    <div class="horizon">
+                        <div>4</div>
+                        <p>When can we claim the tokens? <span>&#9660;</span></p>
+                    </div>
+
+                    <div class="vertical">
+                        <p>After the IDO concludes, you can claim the tokens on our official website.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-five">
+            <div class="image-five">
+                <img src="https://s3-alpha-sig.figma.com/img/79e0/db14/6de61e6b7e512045a7cc5fab1681c6dc?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cpsJ9ujNNmUxLskfs8GDymYzW08fZbPn4MpECcoiM7MzoPM1sX74jPoZaz0Jc-x9e6trrl4SgYckZ8ASbS2GryqzTstLgcQdiGR~PjwNjuvwhdkf1qVyFTNoFbXVm6Mu7wOBW5iv~Xiq8~GcRx9Ut-2CHs7s5uqZGup5LqYvrSuYoC-dBSLEZNedJqqi1WZmRvQRNLYtvWQarHdnpazCqwDwGP0yiDR7M7ipkW6u-xlY5KqsI7~JRcvHfmtYbpCycCn2Gji2z8Q57R0VB68DJ14KqqRb8w0NTd0VUW4ZHgS78IoTJ2tPCGtNbuGQejRjJqxBYaA1zSIJLoMwsljoKQ__"
+                    alt="">
+            </div>
+            <h2>SITEMAP</h2>
+            <ul>
+                <li>Home</li>
+                <li>IDO</li>
+                <li>Tokenomics</li>
+                <li>Roadmap</li>
+                <li>Whitepaper</li>
+                <li>Pledge</li>
+                <li>NFT</li>
+                <li>Games</li>
+            </ul>
+
+        </div>
+    </main>
+</body>
+
+</html>
